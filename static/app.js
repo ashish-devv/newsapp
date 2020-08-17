@@ -22,7 +22,7 @@ app.config(['$interpolateProvider', function($interpolateProvider) {
 
 
 app.controller('headlinescontroller',($scope,$http)=>{
-    var URL="http://127.0.0.1:5000/api/headlines";
+    var URL="https://newsapp.glitch.me/api/headlines";
 
     $http.get(URL).then(
         (response)=>{
@@ -43,7 +43,7 @@ app.controller('headlinescontroller',($scope,$http)=>{
 
 
 app.controller('sportscontroller',($scope,$http)=>{
-    var URL="http://127.0.0.1:5000/api/sports";
+    var URL="https://newsapp.glitch.me/api/sports";
 
     $http.get(URL).then(
         (response)=>{
@@ -60,7 +60,7 @@ app.controller('sportscontroller',($scope,$http)=>{
 });
 
 app.controller('techcontroller',($scope,$http)=>{
-    var URL="http://127.0.0.1:5000/api/tech";
+    var URL="https://newsapp.glitch.me/api/tech";
 
     $http.get(URL).then(
         (response)=>{
@@ -78,7 +78,7 @@ app.controller('techcontroller',($scope,$http)=>{
 
 
 app.controller('entercontroller',($scope,$http)=>{
-    var URL="http://127.0.0.1:5000/api/enter";
+    var URL="https://newsapp.glitch.me/api/enter";
 
     $http.get(URL).then(
         (response)=>{
